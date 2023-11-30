@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "postech-5soat-grupo-25.github.io"
+version = "0.1.0"
+description = ""
+authors = ["PosTech 5SOAT GRUPO 25 <postech-5soat-grupo-25@googlegroups.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+mkdocs-material = "^9.4.10"
+mkdocs-awesome-pages-plugin = "^2.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

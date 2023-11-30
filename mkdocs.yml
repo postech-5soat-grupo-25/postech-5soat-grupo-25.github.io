@@ -1,0 +1,52 @@
+site_name: Tech Challenge | PosTech 5SOAT • Grupo 25
+
+repo_name: Repositórios
+repo_url: https://github.com/postech-5soat-grupo-25
+
+# Theme
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/logo.svg
+  palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: black
+    accent: pink
+    toggle:
+      icon: material/lightbulb-variant-outline
+      name: "Switch to dark mode"
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: black
+    accent: pink
+    toggle:
+      icon: material/lightbulb-variant
+      name: "Switch to light mode"
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: material/github
+  features:
+    - navigation.tabs
+    - navigation.path
+    - toc.integrate
+    - header.autohide
+
+# Extensions
+markdown_extensions: 
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.extra
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+# Plugins
+plugins:
+  - search
+  - awesome-pages
