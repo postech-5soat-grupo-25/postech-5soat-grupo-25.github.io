@@ -3,11 +3,14 @@ site_name: Tech Challenge | PosTech 5SOAT • Grupo 25
 repo_name: Repositórios
 repo_url: https://github.com/postech-5soat-grupo-25
 
+copyright: Copyright &copy; 2023 - 2024 | FIAP 5SOAT • Grupo 25
+
 # Theme
 theme:
   name: material
   language: pt-BR
   logo: assets/logo.svg
+  favicon: assets/favicon.ico
   palette:
   - media: "(prefers-color-scheme: light)"
     scheme: default
