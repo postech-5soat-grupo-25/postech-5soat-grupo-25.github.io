@@ -1,39 +1,17 @@
+## :material-information-outline: Sobre
+O objetivo desse site é centralizar todas as documentações dos entregáveis construídos para o Tech Challenge da Pós-Graduação em Software Architecture da FIAP. Cada fase está estruturada como uma aba do site e cada entregável como uma seção da respectiva aba.
 
-!!! NOTE ""
-    ![Alan Molina](./assets/images/alan_molina.jpeg){ align=left width="70"}
+---
 
-    **Alan Molina | RM ...**     
-    :material-linkedin: [alanmmolina](https://www.linkedin.com/in/alanmmolina/)    
-    Data Engineer @ iFood   
+## :material-account-circle-outline: Membros
+O grupo é composto por:
 
-    ---
+- :material-linkedin: [Alan Molina](https://www.linkedin.com/in/alanmmolina/) | **RM 353062**
 
-    ![Albert Moreira](./assets/images/albert_moreira.jpeg){ align=left width="70"}
+- :material-linkedin: [Albert Moreira](https://www.linkedin.com/in/in/albert-moreira-62b9272b/) | **RM ...**
 
-    **Albert Moreira | RM ...**     
-    :material-linkedin: [albert-moreira-62b9272b](https://www.linkedin.com/in/in/albert-moreira-62b9272b/)    
-    Software Engineer @ Turing   
+- :material-linkedin: [Bruno Mafra Pelence](https://www.linkedin.com/in/in/bruno-mafra-pelence/) | **RM ...**
 
-    ---
+- :material-linkedin: [Lucas Rebello](https://www.linkedin.com/in/in/lucas-rebello-b01849112/) | **RM ...**
 
-    ![Bruno Mafra Pelence](./assets/images/bruno_mafra.jpeg){ align=left width="70"}    
-    
-    **Bruno Mafra Pelence | RM ...**     
-    :material-linkedin: [bruno-mafra-pelence](https://www.linkedin.com/in/in/bruno-mafra-pelence/)    
-    Software Engineer @ ZPE Systems  
-
-    ---
-
-    ![Lucas Rebello](./assets/images/lucas_rebello.jpeg){ align=left width="70"}
-
-    **Lucas Rebello | RM ...**     
-    :material-linkedin: [lucas-rebello-b01849112](https://www.linkedin.com/in/in/lucas-rebello-b01849112/)    
-    Software Developer @ ZPE Systems  
-
-    ---
-
-    ![Matheus Bachiste Lopes](./assets/images/matheus_lopes.jpeg){ align=left width="70"}
-    
-    **Matheus Bachiste Lopes | RM ...**     
-    :material-linkedin: [matheus-bachiste-lopes](https://www.linkedin.com/in/in/matheus-bachiste-lopes/)    
-    Python Developer @ Itaú Unibanco 
+- :material-linkedin: [Matheus Bachiste Lopes](https://www.linkedin.com/in/in/matheus-bachiste-lopes/) | **RM ...**
