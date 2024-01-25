@@ -1,17 +1,15 @@
-## :material-information-outline: Sobre
-O objetivo desse site é centralizar todas as documentações dos entregáveis construídos para o Tech Challenge da Pós-Graduação em Software Architecture da FIAP. Cada fase está estruturada como uma aba do site e cada entregável como uma seção da respectiva aba.
+!!! inline BUG ""
+    O objetivo desse site é centralizar todas as documentações dos entregáveis construídos para o Tech Challenge da Pós-Graduação em Software Architecture da FIAP. 
+    
+    Cada fase está estruturada como uma aba do site e cada entregável como uma seção da respectiva aba.
+    Estamos organizando as tarefas através do [board](https://github.com/orgs/postech-5soat-grupo-25/projects/1/views/1) no GitHub e utilizamos um [board](https://miro.com/app/board/uXjVNLxY_L4=/) no Miro para as dinâmicas de ideação.
 
----
+| Membros do Grupo       |                                                                             | RM       |
+| ---------------------- | --------------------------------------------------------------------------- | -------- |
+| Alan Marques Molina    | [:material-linkedin:](https://www.linkedin.com/in/alanmmolina/)             | `353062` |
+| Albert Dias Moreira    | [:material-linkedin:](https://www.linkedin.com/in/albert-moreira-62b9272b/) | ...      |
+| Bruno Mafra Pelence    | [:material-linkedin:](https://www.linkedin.com/in/bruno-mafra-pelence/)     | ...      |
+| Lucas Felipe Rebello   | [:material-linkedin:](https://www.linkedin.com/in/lucas-rebello-b01849112/) | ...      |
+| Matheus Bachiste Lopes | [:material-linkedin:](https://www.linkedin.com/in/matheus-bachiste-lopes/)  | ...      |
 
-## :material-account-circle-outline: Membros
-O grupo é composto por:
 
-- :material-linkedin: [Alan Molina](https://www.linkedin.com/in/alanmmolina/) | **RM 353062**
-
-- :material-linkedin: [Albert Moreira](https://www.linkedin.com/in/in/albert-moreira-62b9272b/) | **RM ...**
-
-- :material-linkedin: [Bruno Mafra Pelence](https://www.linkedin.com/in/in/bruno-mafra-pelence/) | **RM ...**
-
-- :material-linkedin: [Lucas Rebello](https://www.linkedin.com/in/in/lucas-rebello-b01849112/) | **RM ...**
-
-- :material-linkedin: [Matheus Bachiste Lopes](https://www.linkedin.com/in/in/matheus-bachiste-lopes/) | **RM ...**
