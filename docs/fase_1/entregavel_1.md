@@ -7,9 +7,10 @@ icon: material/file-check
 
 ### Glossário da Linguagem Ubíqua
 
-A comunicação clara e eficaz é um pilar fundamental no desenvolvimento de sistemas complexos, especialmente quando se trata de traduzir as necessidades do negócio em soluções tecnológicas. No contexto do projeto de autoatendimento para a lanchonete, é essencial estabelecer uma linguagem comum que seja compreendida por todos os envolvidos, desde a equipe de desenvolvimento até os funcionários e clientes do estabelecimento.
+!!! BUG ""
+    A comunicação clara e eficaz é um pilar fundamental no desenvolvimento de sistemas complexos, especialmente quando se trata de traduzir as necessidades do negócio em soluções tecnológicas. No contexto do projeto de autoatendimento para a lanchonete, é essencial estabelecer uma linguagem comum que seja compreendida por todos os envolvidos, desde a equipe de desenvolvimento até os funcionários e clientes do estabelecimento.
 
-Para alcançar esse objetivo, adotamos o conceito de **Linguagem Ubíqua** do Domain-Driven Design (DDD), criado por Eric Evans. Esta linguagem ubíqua serve como uma ponte entre o domínio do negócio e o modelo técnico, garantindo que todos os termos e conceitos sejam usados de forma consistente e sem ambiguidades.
+    Para alcançar esse objetivo, adotamos o conceito de **Linguagem Ubíqua** do Domain-Driven Design (DDD), criado por Eric Evans. Esta linguagem ubíqua serve como uma ponte entre o domínio do negócio e o modelo técnico, garantindo que todos os termos e conceitos sejam usados de forma consistente e sem ambiguidades.
 
 O glossário a seguir é uma compilação dos termos-chave que formam a base da nossa linguagem ubíqua. Ele serve como uma referência rápida para entender os elementos e processos que compõem o sistema de autoatendimento da lanchonete, assegurando que a comunicação seja precisa e alinhada com as necessidades do projeto.
 
@@ -30,9 +31,11 @@ O glossário a seguir é uma compilação dos termos-chave que formam a base da 
     - **Em Preparação**: O status de um pedido que está sendo preparado pela cozinha. Nesta etapa, os ingredientes estão sendo montados e o pedido está em processo de ser concluído.
     - **Pronto**: O status que indica que o pedido foi preparado e está pronto para ser entregue ou retirado pelo cliente.
     - **Finalizado**: O status final de um pedido, que ocorre após o cliente retirar o pedido. Indica que o ciclo do pedido foi completado e que não há mais ações pendentes.
+- **Usuário**: Funcionário do estabelecimento com acesso à interface ou portal para gerenciamento de clientes, produtos, categorias e acompanhamento de pedidos.
 - **Acesso Administrativo**: Interface ou portal que permite ao estabelecimento gerenciar clientes, produtos, categorias e acompanhar pedidos.
 - **Campanhas Promocionais**: Estratégias de marketing para incentivar vendas ou fidelizar clientes, utilizando a identificação dos mesmos.
 
+---
 
 ### Técnias de Modelagem de Domínio
 
@@ -42,22 +45,22 @@ Os diagramas a seguir representam os fluxos de *Realização do Pedido e Pagamen
 
 #### Domain Storytelling
 
-???+ NOTE "Domain Storytelling?"
+!!! BUG ""
     O **Domain Storytelling** nos ajuda a contar a história do nosso domínio. Através de simples ilustrações e narrativas, conseguimos mapear como os diferentes atores interagem com o sistema e entre si, criando uma visão clara e compartilhada das funcionalidades e processos do negócio.
 
 <figure markdown>
-  ![Domain Storytelling 1](../assets/images/fase_1/domain_storytelling_1.jpg){ width="700" }
+  ![Domain Storytelling 1](../assets/images/fase_1/domain_storytelling_1.jpg){ width="550" }
   <figcaption>Realização de pedido e pagamento</figcaption>
 </figure>
 
 <figure markdown>
-  ![Domain Storytelling 2](../assets/images/fase_1/domain_storytelling_2.jpg){ width="700" }
+  ![Domain Storytelling 2](../assets/images/fase_1/domain_storytelling_2.jpg){ width="550" }
   <figcaption>Preparação e entrega do pedido</figcaption>
 </figure>
 
 #### Event Storming
 
-???+ NOTE "Event Storming?"
+!!! BUG ""
     O **Event Storming** é uma técnica de modelagem rápida e interativa que reúne diferentes stakeholders para explorar fluxos de trabalho e processos de negócio. Ao identificar eventos, comandos, políticas e agregados, criamos uma representação visual dinâmica que destaca as reações em cadeia e os pontos críticos do sistema.
 
 <figure markdown>
@@ -71,65 +74,80 @@ Os diagramas a seguir representam os fluxos de *Realização do Pedido e Pagamen
 </figure>
 
 <figure markdown>
-  ![Event Storming 3](../assets/images/fase_1/event_storming_3.jpg){ width="700" }
+  ![Event Storming 3](../assets/images/fase_1/event_storming_3.jpg){ width="600" }
   <figcaption>Organização e identificação dos agregados</figcaption>
 </figure>
+
+---
 
 ### Entidades e Objetos de Valor
 
 #### Entidades
 
-##### Cliente
+- **Usuário**
 
-| Propriedade          | Tipo     | Descrição                                   |
-| -------------------- | -------- | ------------------------------------------- |
-| **id**               | `usize`  | Identificador único do cliente.             |
-| **nome**             | `String` | Nome do cliente.                            |
-| **email**            | `String` | E-mail do cliente.                          |
-| **cpf**              | `Cpf`    | CPF do cliente (objeto de valor).           |
-| **data_criacao**     | `String` | Data de criação do registro do cliente.     |
-| **data_atualizacao** | `String` | Data de atualização do registro do cliente. |
+| Propriedade          | Tipo     | Descrição                                          |
+| -------------------- | -------- | -------------------------------------------------- |
+| **id**               | `usize`  | Identificador único do usuário.                    |
+| **nome**             | `String` | Nome do usuário.                                   |
+| **email**            | `String` | E-mail do usuário.                                 |
+| **cpf**              | `Cpf`    | CPF do usuário (objeto de valor).                  |
+| **tipo**             | `Tipo`   | Tipo de acesso do usuário (_Admin_ ou _Cozinha_)   |
+| **status**           | `Status` | Status de acesso do usuário (_Ativo_ ou _Inativo_) |
+| **data_criacao**     | `String` | Data de criação do registro do usuário.            |
+| **data_atualizacao** | `String` | Data de atualização do registro do usuário.        |
 
-##### Produto
+- **Cliente**
 
-| Propriedade          | Tipo           | Descrição                                                                   |
-| -------------------- | -------------- | --------------------------------------------------------------------------- |
-| **id**               | `usize`        | Identificador único do produto.                                             |
-| **nome**             | `String`       | Nome do produto.                                                            |
-| **foto**             | `String`       | Caminho ou URL da foto do produto.                                          |
-| **descricao**        | `String`       | Descrição do produto.                                                       |
-| **categoria**        | `Categoria`    | Categoria do produto (_Lanche_, _Acompanhamento_, _Bebida_ ou _Sobremesa_). |
-| **preco**            | `f32`          | Preço do produto.                                                           |
-| **ingredientes**     | `Ingredientes` | Ingredientes do produto (objeto de valor).                                  |
-| **data_criacao**     | `String`       | Data de criação do registro do produto.                                     |
-| **data_atualizacao** | `String`       | Data de atualização do registro do produto.                                 |
+  | Propriedade          | Tipo     | Descrição                                   |
+  | -------------------- | -------- | ------------------------------------------- |
+  | **id**               | `usize`  | Identificador único do cliente.             |
+  | **nome**             | `String` | Nome do cliente.                            |
+  | **email**            | `String` | E-mail do cliente.                          |
+  | **cpf**              | `Cpf`    | CPF do cliente (objeto de valor).           |
+  | **data_criacao**     | `String` | Data de criação do registro do cliente.     |
+  | **data_atualizacao** | `String` | Data de atualização do registro do cliente. |
 
-##### Pedido
+- **Produto**
 
-> Agregado entre **Cliente** e **Produto**
+  | Propriedade          | Tipo           | Descrição                                                                   |
+  | -------------------- | -------------- | --------------------------------------------------------------------------- |
+  | **id**               | `usize`        | Identificador único do produto.                                             |
+  | **nome**             | `String`       | Nome do produto.                                                            |
+  | **foto**             | `String`       | Caminho ou URL da foto do produto.                                          |
+  | **descricao**        | `String`       | Descrição do produto.                                                       |
+  | **categoria**        | `Categoria`    | Categoria do produto (_Lanche_, _Acompanhamento_, _Bebida_ ou _Sobremesa_). |
+  | **preco**            | `f32`          | Preço do produto.                                                           |
+  | **ingredientes**     | `Ingredientes` | Ingredientes do produto (objeto de valor).                                  |
+  | **data_criacao**     | `String`       | Data de criação do registro do produto.                                     |
+  | **data_atualizacao** | `String`       | Data de atualização do registro do produto.                                 |
 
-| Propriedade          | Tipo      | Descrição                                                                       |
-| -------------------- | --------- | ------------------------------------------------------------------------------- |
-| **id**               | `usize`   | Identificador único do pedido.                                                  |
-| **cliente**          | `Cliente` | Cliente que fez o pedido.                                                       |
-| **lanche**           | `Produto` | Produto do tipo lanche no pedido.                                               |
-| **acompanhamento**   | `Produto` | Produto do tipo acompanhamento no pedido.                                       |
-| **bebida**           | `Produto` | Produto do tipo bebida no pedido.                                               |
-| **pagamento**        | `String`  | Informação de pagamento do pedido.                                              |
-| **status**           | `Status`  | Status atual do pedido (_Recebido_, _Em Preparação_, _Pronto_ ou _Finalizado_). |
-| **data_criacao**     | `String`  | Data de criação do registro do pedido.                                          |
-| **data_atualizacao** | `String`  | Data de atualização do registro do pedido.                                      |
+- **Pedido**
+
+  > Agregado entre **Cliente** e **Produto**
+
+  | Propriedade          | Tipo      | Descrição                                                                       |
+  | -------------------- | --------- | ------------------------------------------------------------------------------- |
+  | **id**               | `usize`   | Identificador único do pedido.                                                  |
+  | **cliente**          | `Cliente` | Cliente que fez o pedido.                                                       |
+  | **lanche**           | `Produto` | Produto do tipo lanche no pedido.                                               |
+  | **acompanhamento**   | `Produto` | Produto do tipo acompanhamento no pedido.                                       |
+  | **bebida**           | `Produto` | Produto do tipo bebida no pedido.                                               |
+  | **pagamento**        | `String`  | Informação de pagamento do pedido.                                              |
+  | **status**           | `Status`  | Status atual do pedido (_Recebido_, _Em Preparação_, _Pronto_ ou _Finalizado_). |
+  | **data_criacao**     | `String`  | Data de criação do registro do pedido.                                          |
+  | **data_atualizacao** | `String`  | Data de atualização do registro do pedido.                                      |
 
 #### Objetos de Valor
 
-##### CPF
+- **CPF**
 
-| Propriedade | Tipo     | Descrição      |
-| ----------- | -------- | -------------- |
-| **codigo**  | `String` | Número do CPF. |
+  | Propriedade | Tipo     | Descrição      |
+  | ----------- | -------- | -------------- |
+  | **codigo**  | `String` | Número do CPF. |
 
-##### Ingredientes
+- **Ingredientes**
 
-| Propriedade      | Tipo          | Descrição                         |
-| ---------------- | ------------- | --------------------------------- |
-| **ingredientes** | `Vec<String>` | Lista de ingredientes do produto. |
+  | Propriedade      | Tipo          | Descrição                         |
+  | ---------------- | ------------- | --------------------------------- |
+  | **ingredientes** | `Vec<String>` | Lista de ingredientes do produto. |
