@@ -46,7 +46,7 @@ A estrutura de diretórios do projeto reflete a aplicação da Arquitetura Hexag
 │   │   └── driver
 │   ├── core
 │   │   ├── application
-│   │   │   ├── interfaces
+│   │   │   ├── ports
 │   │   │   └── use_cases
 │   │   └── domain
 │   │       ├── entities
