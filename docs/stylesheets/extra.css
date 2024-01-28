@@ -21,15 +21,15 @@
   }
   .md-typeset .admonition.postgresql,
   .md-typeset details.postgresql {
-    border-color: rgb(47, 103, 146);
+    border-color: rgb(0, 184, 212);
   }
   .md-typeset .postgresql > .admonition-title,
   .md-typeset .postgresql > summary {
-    background-color: rgba(47, 103, 146, 0.1);
+    background-color: rgba(0, 184, 212, 0.1);
   }
   .md-typeset .postgresql > .admonition-title::before,
   .md-typeset .postgresql > summary::before {
-    background-color: rgb(47, 103, 146);
+    background-color: rgb(0, 184, 212);
     -webkit-mask-image: var(--md-admonition-icon--postgresql);
             mask-image: var(--md-admonition-icon--postgresql);
   }
