@@ -88,3 +88,53 @@ Optamos pelo Tokio Postgres devido às seguintes características:
 - **Tipagem Forte**: A biblioteca se beneficia do sistema de tipos do Rust para garantir que as interações com o banco de dados sejam seguras e corretas em tempo de compilação.
 
 ---
+
+## APIs
+
+Esta seção fornece uma visão geral dos endpoints disponíveis para o serviço de autoatendimento em construção. Para testar os endpoints interativamente, utilize nossa **Swagger UI** dispnibilizada ao fazer o build da aplicação.
+
+### Autenticação
+
+A primeira etapa é a obtenção de um _bearer token_ de acesso através da realização do login na aplicação. Para isso, basta utilizar o endpoint abaixo passando os devidos parâmetros no corpo da requisição:
+
+| Endpoint        | Método | Parâmetros                               | Descrição                                         |
+| --------------- | ------ | ---------------------------------------- | ------------------------------------------------- |
+| **/auth/login** | `POST` | **cpf**: `string`<br>**senha**: `string` | Autentica o usuário e retorna um token de acesso. |
+
+!!! QUOTE ""
+    Disponibilizamos um usuário administrativo padrão pré-cadastrado que poderá utilizar para autenticação na aplicação. Para isso, basta utilizar os seguintes parâmetros:
+
+    ```json
+    {
+        "cpf": "000.000.000-00",
+        "senha": "melhor_projeto"
+    }
+    ```
+
+### Clientes
+
+Disponibilizamos os endpois abaixo para interação com a entidade de clientes. Para autenticação, é necessário informar o _bearer token_ obtido anteriormente através do login na aplicação.
+
+| Endpoint            | Método | Parâmetros                                                    | Descrição                            |
+| ------------------- | ------ | ------------------------------------------------------------- | ------------------------------------ |
+| **/clientes/**      | `GET`  | -                                                             | Lista todos os clientes cadastrados. |
+| **/clientes/**      | `POST` | **nome**: `string`<br>**email**: `string`<br>**cpf**:`string` | Cadastro de um novo cliente.         |
+| **/clientes/{cpf}** | `GET`  | **cpf**: `string`                                             | Busca um cliente pelo CPF.           |
+
+> - É necessário informar o **CPF** no formato `123.456.789-00`.
+
+### Usuários
+
+Os endpoints a seguir são utilizados para gerenciar os usuários da aplicação. É necessário informar o _bearer token_ obtido no login para autenticar as requisições.
+
+| Endpoint             | Método | Parâmetros                                                    | Descrição                                  |
+| -------------------- | ------ | ------------------------------------------------------------- | ------------------------------------------ |
+| **/usuarios/**       | `GET`  | -                                                             | Lista todos os usuários cadastrados.       |
+| **/usuarios/**       | `POST` | **nome**: `string`<br>**email**: `string`<br>**cpf**: `string`<br>**senha**: `string`<br>**tipo**: `string`<br>**status**: `string` | Cadastra um novo usuário.                  |
+| **/usuarios/{id}**   | `GET`  | **id**: `integer`                                             | Busca um usuário pelo ID.                  |
+| **/usuarios/{id}**   | `PUT`  | **id**: `integer`<br>**nome**: `string`<br>**email**: `string`<br>**cpf**: `string`<br>**senha**: `string`<br>**tipo**: `string`<br>**status**: `string` | Atualiza os dados de um usuário existente. |
+| **/usuarios/{cpf}**  | `DELETE`| **cpf**: `string`                                             | Remove um usuário pelo CPF.                |
+
+> - É necessário informar o **CPF** no formato `123.456.789-00`;
+> - Os valores aceitos para o **tipo** do usuário são: `Admin` e `Cozinha`;
+> - Os valores aceitos para o **status** do usuário são: `Ativo` e `Inativo`.
