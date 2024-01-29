@@ -10,6 +10,6 @@
 | Albert Dias Moreira    | [:material-linkedin:](https://www.linkedin.com/in/albert-moreira-62b9272b/) | `352569` |
 | Bruno Mafra Pelence    | [:material-linkedin:](https://www.linkedin.com/in/bruno-mafra-pelence/)     | ...      |
 | Lucas Felipe Rebello   | [:material-linkedin:](https://www.linkedin.com/in/lucas-rebello-b01849112/) | ...      |
-| Matheus Bachiste Lopes | [:material-linkedin:](https://www.linkedin.com/in/matheus-bachiste-lopes/)  | ...      |
+| Matheus Bachiste Lopes | [:material-linkedin:](https://www.linkedin.com/in/matheus-bachiste-lopes/)  | `352783` |
 
 
