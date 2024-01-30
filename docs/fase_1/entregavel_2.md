@@ -127,7 +127,7 @@ Os endpoints a seguir são utilizados para gerenciar os usuários da aplicação
 
 ### Clientes
 
-Disponibilizamos os endpois abaixo para interação com a entidade de clientes:
+Disponibilizamos os endpoints abaixo para interação com a entidade de clientes:
 
 | Endpoint            | Método | Parâmetros                                                    | Descrição                            |
 | ------------------- | ------ | ------------------------------------------------------------- | ------------------------------------ |
@@ -136,3 +136,18 @@ Disponibilizamos os endpois abaixo para interação com a entidade de clientes:
 | **/clientes/{cpf}** | `GET`  | **cpf**: `string`                                             | Busca um cliente pelo CPF.           |
 
 > - É necessário informar um **CPF** válido no formato `123.456.789-00`.
+
+### Produtos
+
+Disponibilizamos os endpoints abaixo para interação com a entidade de produtos:
+
+| Endpoint            | Método | Parâmetros                                                    | Descrição                            |
+| ------------------- | ------ | ------------------------------------------------------------- | ------------------------------------ |
+| **/clientes/**      | `GET`  | -                                                             | Lista todos os clientes cadastrados. |
+| **/clientes/**      | `POST` | **nome**: `string`<br>**email**: `string`<br>**cpf**:`string` | Cadastro de um novo cliente.         |
+| **/clientes/{cpf}** | `GET`  | **cpf**: `string`                                             | Busca um cliente pelo CPF.           |
+
+> - É necessário informar um **CPF** válido no formato `123.456.789-00`.
+
+
+### Pedidos
