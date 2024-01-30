@@ -139,6 +139,24 @@ Disponibilizamos os endpoints abaixo para interação com a entidade de clientes
 
 ### Produtos
 
+Disponibilizamos os endpoints abaixo para interação com a entidade de produtos:
 
+| Endpoint                | Método | Parâmetros                                  | Descrição                                      |
+| ----------------------- | ------ | ------------------------------------------- | ---------------------------------------------- |
+| **/produto**              | `GET`  | -                                           | Lista todos os produtos cadastrados.           |
+| **/produto/<id>**   | `PUT`  | id: integer                             | Busca um produto pelo ID.                      |
+| **/produto/**             | `POST` | Corpo da requisição (detalhes do produto)   | Cria um novo produto.                          |
+| **/produto/<id>**   | `POST` | id: integer<br>Corpo da requisição (detalhes do produto) | Atualiza um produto existente.                 |
 
 ### Pedidos
+
+Disponibilizamos os endpoints abaixo para interação com a entidade de pedidos:
+
+| Endpoint                          | Método | Parâmetros                                  | Descrição                                      |
+| --------------------------------- | ------ | ------------------------------------------- | ---------------------------------------------- |
+| **/pedido**                       | `GET`  | -                                           | Lista todos os pedidos cadastrados.            |
+| **/pedido**                       | `POST` | Corpo da requisição (detalhes do pedido)    | Cria um novo pedido.                           |
+| **/pedido_novos**                 | `GET`  | -                                           | Lista todos os novos pedidos.                  |
+| **/<id>/status/<status>**         | `PUT`  | id: integer, status: string         | Atualiza o status de um pedido.                |
+| **/<id>/produto/<categoria>/<produto_id>** | `PUT`  | id: integer, categoria: string, produto_id: integer | Insere um produto em um pedido.                |
+| **/<id>/pagamento**               | `PUT`  | id: integer                             | Realiza o pagamento de um pedido.              |
