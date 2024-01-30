@@ -139,15 +139,6 @@ Disponibilizamos os endpoints abaixo para interação com a entidade de clientes
 
 ### Produtos
 
-Disponibilizamos os endpoints abaixo para interação com a entidade de produtos:
-
-| Endpoint            | Método | Parâmetros                                                    | Descrição                            |
-| ------------------- | ------ | ------------------------------------------------------------- | ------------------------------------ |
-| **/clientes/**      | `GET`  | -                                                             | Lista todos os clientes cadastrados. |
-| **/clientes/**      | `POST` | **nome**: `string`<br>**email**: `string`<br>**cpf**:`string` | Cadastro de um novo cliente.         |
-| **/clientes/{cpf}** | `GET`  | **cpf**: `string`                                             | Busca um cliente pelo CPF.           |
-
-> - É necessário informar um **CPF** válido no formato `123.456.789-00`.
 
 
 ### Pedidos
