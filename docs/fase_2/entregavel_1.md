@@ -41,7 +41,7 @@ Uma entidade da nossa solução é definida por:
 
 - **Atributos**: Representam as propriedades da entidade. Por exemplo, um `Pedido` pode ter atributos como _id_, _cliente_, _itens do pedido_, _status_, _data de criação_ e _data de atualização_.
 - **Métodos de Negócio**: Encapsulam as regras de negócio relevantes para a entidade. Isso pode incluir validações, cálculos e operações que alteram o estado da entidade de maneira controlada.
-- Construtores: Usados para criar instâncias da entidade, garantindo que elas estejam em um estado válido desde o início.
+- **Construtores**: Usados para criar instâncias da entidade, garantindo que elas estejam em um estado válido desde o início.
 - **Getters/Setters**: Métodos para acessar e modificar os atributos da entidade. Embora o acesso direto aos atributos possa ser permitido em algumas linguagens, o uso de métodos permite maior controle sobre como os atributos são acessados e modificados.
 
 Utilizamos também os seguintes princípios de design:
@@ -87,5 +87,26 @@ Utilizamos também os seguintes princípios de design:
 - **Separação de Responsabilidades**: Os Gateways separam a lógica de acesso a dados da lógica de negócio, permitindo mudanças em um sem afetar o outro.
 - **Abstração**: Ao abstrair os detalhes de implementação do acesso a dados, os Gateways facilitam a substituição ou modificação das fontes de dados sem impactar a aplicação.
 - **Reusabilidade**: Os Gateways podem ser reutilizados em diferentes partes da aplicação, promovendo a consistência e reduzindo a duplicação de código.
+
+
+##### Controllers
+
+Na Clean Architecture, a camada de Controllers serve como um ponto de entrada para as requisições vindas de interfaces externas, como uma interface de usuário web, uma API REST, ou um terminal de linha de comando. Os Controllers interpretam as requisições, invocam os Use Cases apropriados e retornam as respostas adequadas. Eles agem como mediadores entre a interface externa e a lógica de negócio da aplicação.
+
+Os Controllers estão localizados na camada mais externa da Clean Architecture, diretamente em contato com as interfaces de usuário ou outros sistemas externos. Eles traduzem as requisições dessas fontes em operações nos Use Cases e adaptam as respostas dos Use Cases de volta para o formato esperado pela interface externa.
+
+A camada de Controllers é essencial para manter a interface de usuário ou API da aplicação claramente separada da lógica de negócio interna. Isso não apenas facilita a manutenção e a evolução da aplicação, mas também permite que a mesma lógica de negócio seja exposta através de múltiplas interfaces sem duplicação de código.
+
+Um Controller em nossa aplicação é definido por:
+
+- **Use Cases**: Referências aos Use Cases que encapsulam a lógica de negócio específica que o Controller precisa executar. No exemplo, `pedidos_e_pagamentos_use_case` e `preparacao_e_entrega_use_case` são usados para gerenciar pedidos e seus pagamentos.
+- **Métodos de Ação**: Cada método no Controller corresponde a uma ação que pode ser realizada pela aplicação, como `get_pedidos`, `novo_pedido`, entre outros. Esses métodos lidam com a lógica de interação com os Use Cases e formatam as respostas para a interface externa.
+
+Utilizamos também os seguintes princípios de design:
+
+- **Separação de Responsabilidades**: Os Controllers separam a lógica de interação com o usuário da lógica de negócio, facilitando a manutenção e a evolução de ambos de forma independente.
+- **Simplicidade**: Os Controllers devem ser simples, delegando a maior parte do trabalho pesado para os Use Cases e outros componentes da aplicação.
+- **Reusabilidade**: Embora os Controllers sejam específicos para a interface que estão servindo, a lógica de negócio que eles invocam é reutilizável em diferentes contextos.
+
 
 
