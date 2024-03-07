@@ -33,3 +33,21 @@
     -webkit-mask-image: var(--md-admonition-icon--postgresql);
             mask-image: var(--md-admonition-icon--postgresql);
   }
+
+  :root {
+    --md-admonition-icon--kubernetes: url('/assets/extra/admonitions/kubernetes.svg');
+  }
+  .md-typeset .admonition.kubernetes,
+  .md-typeset details.kubernetes {
+    border-color: rgb(57, 112, 228);
+  }
+  .md-typeset .kubernetes > .admonition-title,
+  .md-typeset .kubernetes > summary {
+    background-color: rgba(57, 112, 228, 0.1);
+  }
+  .md-typeset .kubernetes > .admonition-title::before,
+  .md-typeset .kubernetes > summary::before {
+    background-color: rgb(57, 112, 228);
+    -webkit-mask-image: var(--md-admonition-icon--kubernetes);
+            mask-image: var(--md-admonition-icon--kubernetes);
+  }
