@@ -8,11 +8,15 @@ icon: material/file-check
 !!! BUG ""
     A **Clean Architecture**, proposta por Robert C. Martin (o _Uncle Bob_), é uma abordagem de design de software que visa separar as preocupações do código em camadas distintas, promovendo a independência do domínio de negócios em relação a frameworks, interfaces de usuário, e qualquer agente externo. O objetivo é criar sistemas mais maleáveis, testáveis e independentes de tecnologias externas, facilitando a manutenção e a evolução do software. O **Clean Code** é um conjunto de práticas para escrever código que seja fácil de entender e modificar. Um código limpo deve ser claro, simples, e direto, com nomes de variáveis e funções que revelam sua intenção, além de estar bem organizado e ser facilmente legível por outros desenvolvedores.
 
+---
+
 ### Ports & Adapters x Clean Architecture
 
 A Arquitetura Hexagonal (ou _Ports & Adapters_), utilizada na **Fase 1** do projeto, foca na separação da lógica de aplicação do mundo exterior, permitindo que a aplicação interaja com diferentes tecnologias de entrada e saída através de portas e adaptadores. 
 
 Agora, a ideia é converter a aplicação para utilizar os conceitos de Clean Architecture. Ambas as arquiteturas visam a separação de preocupações e a independência de tecnologias externas. A principal diferença entre elas é que a Clean Architecture enfatiza ainda mais a separação e a independência, organizando o código em _camadas circulares_, onde as dependências apontam para dentro, em direção à lógica de negócios central. Isso promove uma maior flexibilidade e desacoplamento entre os componentes do sistema.
+
+---
 
 ### Conversão para Clean Architecture
 
@@ -26,6 +30,8 @@ Para conversão entre as arquiteturas, atualizamos a estrutura de diretórios pa
 Essa estrutura permite que mudanças em uma camada, como a substituição de um banco de dados ou a alteração da interface de usuário, possam ser realizadas com impacto mínimo nas outras camadas, especialmente na lógica de negócios central.
 
 Ao adotar a Clean Architecture, o projeto se beneficia de uma maior flexibilidade, facilitando a implementação de novas funcionalidades, a manutenção do código e a realização de testes automatizados, garantindo assim a entrega contínua de valor para os usuários finais e a sustentabilidade do projeto a longo prazo.
+
+---
 
 #### Camadas da Arquitetura
 
@@ -50,6 +56,8 @@ Utilizamos também os seguintes princípios de design:
 - **Validação**: As entidades são responsáveis por validar seu estado para garantir que estejam sempre em condições válidas de acordo com as regras de negócio.
 - **Independência**: As entidades não devem depender de detalhes de implementação de camadas externas, como persistência de dados ou apresentação, mantendo a pureza das regras de negócio.
 
+---
+
 ##### Casos de Uso
 
 Na Clean Architecture, a camada de Use Cases (Casos de Uso) é responsável por implementar as regras de negócio específicas da aplicação. Ela atua como intermediária entre a interface de usuário (ou qualquer outro tipo de interface externa) e o domínio do negócio, representado pelas entidades. Os Use Cases orquestram o fluxo de dados para e das entidades, e direcionam esses dados para onde eles precisam ir.
@@ -68,6 +76,8 @@ Utilizamos também os seguintes princípios de design:
 - **Foco na Lógica de Negócio**: Use Cases encapsulam a lógica de negócio específica da aplicação, mantendo-a separada das preocupações de interface de usuário e persistência de dados.
 - **Independência**: Use Cases são independentes de frameworks e interfaces externas, permitindo que a lógica de negócio seja reutilizada em diferentes contextos.
 - **Testabilidade**: A separação clara de responsabilidades e a independência de tecnologias externas facilitam a escrita de testes unitários e de integração para os Use Cases.
+
+---
 
 ##### Gateways
 
@@ -88,6 +98,7 @@ Utilizamos também os seguintes princípios de design:
 - **Abstração**: Ao abstrair os detalhes de implementação do acesso a dados, os Gateways facilitam a substituição ou modificação das fontes de dados sem impactar a aplicação.
 - **Reusabilidade**: Os Gateways podem ser reutilizados em diferentes partes da aplicação, promovendo a consistência e reduzindo a duplicação de código.
 
+---
 
 ##### Controllers
 
@@ -107,6 +118,3 @@ Utilizamos também os seguintes princípios de design:
 - **Separação de Responsabilidades**: Os Controllers separam a lógica de interação com o usuário da lógica de negócio, facilitando a manutenção e a evolução de ambos de forma independente.
 - **Simplicidade**: Os Controllers devem ser simples, delegando a maior parte do trabalho pesado para os Use Cases e outros componentes da aplicação.
 - **Reusabilidade**: Embora os Controllers sejam específicos para a interface que estão servindo, a lógica de negócio que eles invocam é reutilizável em diferentes contextos.
-
-
-

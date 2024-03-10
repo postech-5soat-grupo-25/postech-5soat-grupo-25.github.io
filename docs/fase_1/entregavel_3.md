@@ -52,7 +52,7 @@ Nosso arquivo de configuração `docker-compose.yml` define dois serviços: **ap
 
 ---
 
-## Tutorial para Execução da Aplicação
+## Tutorial para Execução da Aplicação com Docker
 
 #### 1. Clonar o Repositório
 
