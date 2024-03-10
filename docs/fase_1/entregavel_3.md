@@ -54,7 +54,7 @@ Nosso arquivo de configuração `docker-compose.yml` define dois serviços: **ap
 
 ## Tutorial para Execução da Aplicação com Docker
 
-#### 1. Clonar o Repositório
+**1. Clonar o Repositório**
 
    Faça o clone do repositório abaixo e entre no diretório do projeto:
    
@@ -63,18 +63,18 @@ Nosso arquivo de configuração `docker-compose.yml` define dois serviços: **ap
    cd tech_challenge
    ```
 
-#### 2. Construir a Imagem Docker
+**2. Construir a Imagem Docker**
    
    Execute `make build` para construir a imagem Docker da aplicação. Isso também construirá a imagem do banco de dados se necessário.
 
-#### 3. Iniciar a Aplicação
+**3. Iniciar a Aplicação**
    
    Após a construção, execute `make run` para iniciar a aplicação. Isso iniciará tanto o serviço da aplicação quanto o serviço do banco de dados.
 
-#### 4. Acessar a Aplicação
+**4. Acessar a Aplicação**
    
    Com a aplicação em execução, você pode acessá-la através do [localhost:8080](http://localhost:8080/docs/index.html) no seu navegador ou utilizando um cliente HTTP. Nessa etapa você pode interagir com a aplicação utilizando os endpoints descritos no [Entregável 2](../entregavel_2/) e acessar a Swagger UI disponibilizada.
 
-#### 5. Desligar a Aplicação
+**5. Desligar a Aplicação**
    
    Quando terminar, execute `make down` para desligar a aplicação e remover os containers.

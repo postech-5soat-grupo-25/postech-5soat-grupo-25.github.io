@@ -151,7 +151,7 @@ Esta seção fornece uma visão geral dos endpoints disponíveis para o serviço
     Disponibilizamos [aqui](https://github.com/postech-5soat-grupo-25/tech_challenge/blob/main/.postman/collection.json) uma _collection_ no **Postman** para facilitar as interações com os endpoints da aplicação. Estão listados diversos cenários de uso e para utilizá-los basta importar a _collection_ alterar os parâmetros das requisições diretamente no Postman.
 
 
-### 1. Autenticação
+### Autenticação
 
 A primeira etapa é a obtenção de um _bearer token_ de acesso através da realização do login na aplicação. Para isso, basta utilizar o endpoint abaixo passando os devidos parâmetros no corpo da requisição:
 
@@ -174,7 +174,7 @@ A primeira etapa é a obtenção de um _bearer token_ de acesso através da real
         }
         ```
 
-### 2. Usuários
+### Usuários
 
 Esta seção detalha os endpoints disponíveis para gerenciamento de usuários na aplicação. Esses endpoints permitem criar, recuperar, atualizar e deletar informações de usuários.
 
@@ -222,7 +222,7 @@ Esta seção detalha os endpoints disponíveis para gerenciamento de usuários n
     |-----------|----------|-----------------|
     | cpf       | `string` | CPF do usuário. |
 
-### 3. Clientes
+### Clientes
 
 Esta seção detalha os endpoints disponíveis para gerenciamento de clientes na aplicação. Esses endpoints permitem criar, recuperar informações de clientes.
 
@@ -250,7 +250,7 @@ Esta seção detalha os endpoints disponíveis para gerenciamento de clientes na
     |-----------|----------|------------------|
     | cpf       | `string` | CPF do cliente.  |
 
-### 4. Produtos
+### Produtos
 
 Esta seção detalha os endpoints disponíveis para gerenciamento de produtos na aplicação. Esses endpoints permitem criar, recuperar, atualizar e deletar informações de produtos.
 
@@ -295,7 +295,7 @@ Esta seção detalha os endpoints disponíveis para gerenciamento de produtos na
     |-----------|-----------|-------------------|
     | id        | `integer` | ID do produto.    |
 
-### 5. Pedidos
+### Pedidos
 
 Esta seção detalha os endpoints disponíveis para gerenciamento de pedidos na aplicação. Esses endpoints permitem criar, recuperar, atualizar o status de pedidos, associar clientes e produtos a pedidos, e registrar pagamentos.
 
