@@ -51,3 +51,94 @@
     -webkit-mask-image: var(--md-admonition-icon--kubernetes);
             mask-image: var(--md-admonition-icon--kubernetes);
   }
+
+  :root {
+    --md-admonition-icon--postman: url('/assets/extra/admonitions/postman.svg');
+  }
+  .md-typeset .admonition.postman,
+  .md-typeset details.postman {
+    border-color: rgb(255, 108, 55);
+  }
+  .md-typeset .postman > .admonition-title,
+  .md-typeset .postman > sumomary {
+    background-color: rgba(255, 108, 55, 0.1);
+  }
+  .md-typeset .postman > .admonition-title::before,
+  .md-typeset .postman > summary::before {
+    background-color: rgb(255, 108, 55);
+    -webkit-mask-image: var(--md-admonition-icon--postman);
+            mask-image: var(--md-admonition-icon--postman);
+  }
+
+  
+  :root {
+    --md-admonition-icon--post: url('/assets/extra/admonitions/api/post.svg');;
+  }
+  .md-typeset .admonition.post,
+  .md-typeset details.post {
+    border-color: rgb(255, 228, 126);
+  }
+  .md-typeset .post > .admonition-title,
+  .md-typeset .post > summary {
+    background-color: rgba(255, 228, 126, 0.1);
+  }
+  .md-typeset .post > .admonition-title::before,
+  .md-typeset .post > summary::before {
+    background-color: rgb(255, 228, 126);
+    -webkit-mask-image: var(--md-admonition-icon--post);
+            mask-image: var(--md-admonition-icon--post);
+  }
+
+  :root {
+    --md-admonition-icon--get: url('/assets/extra/admonitions/api/get.svg');;
+  }
+  .md-typeset .admonition.get,
+  .md-typeset details.get {
+    border-color: rgb(103, 209, 147);
+  }
+  .md-typeset .get > .admonition-title,
+  .md-typeset .get > summary {
+    background-color: rgba(103, 209, 147, 0.1);
+  }
+  .md-typeset .get > .admonition-title::before,
+  .md-typeset .get > summary::before {
+    background-color: rgb(103, 209, 147);
+    -webkit-mask-image: var(--md-admonition-icon--get);
+            mask-image: var(--md-admonition-icon--get);
+  }
+
+  :root {
+    --md-admonition-icon--put: url('/assets/extra/admonitions/api/put.svg');;
+  }
+  .md-typeset .admonition.put,
+  .md-typeset details.put {
+    border-color: rgb(114, 170, 240);
+  }
+  .md-typeset .put > .admonition-title,
+  .md-typeset .put > summary {
+    background-color: rgba(114, 170, 240, 0.1);
+  }
+  .md-typeset .put > .admonition-title::before,
+  .md-typeset .put > summary::before {
+    background-color: rgb(114, 170, 240);
+    -webkit-mask-image: var(--md-admonition-icon--put);
+            mask-image: var(--md-admonition-icon--put);
+  }
+
+  :root {
+    --md-admonition-icon--del: url('/assets/extra/admonitions/api/del.svg');;
+  }
+  .md-typeset .admonition.del,
+  .md-typeset details.del {
+    border-color: rgb(245, 153, 141);
+  }
+  .md-typeset .del > .admonition-title,
+  .md-typeset .del > summary {
+    background-color: rgba(245, 153, 141, 0.1);
+  }
+  .md-typeset .del > .admonition-title::before,
+  .md-typeset .del > summary::before {
+    background-color: rgb(245, 153, 141);
+    -webkit-mask-image: var(--md-admonition-icon--del);
+            mask-image: var(--md-admonition-icon--del);
+  }
