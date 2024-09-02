@@ -1,23 +1,27 @@
-# Docs | PosTech 5SOAT • Grupo 25
-## Getting Started
-First you need to clone the repository:
+# `docs` | PosTech 5SOAT • Grupo 25
+
+## Como Utilizar
+
+Primeiro, você precisa clonar o repositório:
 
 ```bash
 git clone https://github.com/postech-5soat-grupo-25/postech-5soat-grupo-25.github.io.git
 cd postech-5soat-grupo-25.github.io
 ```
 
-### Using the Makefile
-To build and serve the site using the Makefile, simply run:
+### Executando com Makefile
+
+Para construir e servir o site usando o Makefile, basta executar:
 
 ```bash
 make site
 ```
 
-This command will build a Docker image and run a container that serves the *mkdocs-material* site, which you can access at http://localhost:8000.
+Este comando irá construir uma imagem Docker e executar um contêiner que serve o site `mkdocs-material`, que você pode acessar em http://localhost:8000.
 
-### Running with Docker
-Alternatively, you can build the Docker image and run the container manually:
+### Executando com Docker
+
+Alternativamente, você pode construir a imagem Docker e executar o contêiner manualmente:
 
 ```bash
 docker build -t postech-5soat-grupo-25.github.io .
