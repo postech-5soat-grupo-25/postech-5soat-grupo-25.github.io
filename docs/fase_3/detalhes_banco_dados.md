@@ -1,6 +1,6 @@
 ---
-title: Banco de Dados
-icon: material/database
+title: Detalhes do Banco de Dados
+icon: material/file-check
 ---
 
 ## Escolha do PostgreSQL

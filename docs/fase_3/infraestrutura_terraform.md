@@ -1,9 +1,7 @@
 ---
-title: Terraform
-icon: simple/terraform
+title: Infraestrutura com Terraform
+icon: material/file-check
 ---
-
-# Terraform
 
 ## Infraestrutura como Código
 
