@@ -8,6 +8,7 @@ authors = ["PosTech 5SOAT GRUPO 25 <postech-5soat-grupo-25@googlegroups.com>"]
 python = "^3.8"
 mkdocs-material = "^9.4.10"
 mkdocs-awesome-pages-plugin = "^2.9.2"
+mkdocs-pdf = "^0.1.2"
 
 [build-system]
 requires = ["poetry-core"]
