@@ -16,6 +16,7 @@ icon: material/file-check
     - **`pedido-produto`**: [postech-5soat-grupo-25/tech-challenge-pedido-produto](https://github.com/postech-5soat-grupo-25/tech-challenge-pedido-produto)
     - **`usuario-cliente`**: [postech-5soat-grupo-25/tech-challenge-usuario-cliente](https://github.com/postech-5soat-grupo-25/tech-challenge-usuario-cliente)
     - **`pagamento`**: [postech-5soat-grupo-25/tech-challenge-pagamento](https://github.com/postech-5soat-grupo-25/tech-challenge-pagamento)
+    - **`auth`**: [postech-5soat-grupo-25/tech-challenge-auth](https://github.com/postech-5soat-grupo-25/tech-challenge-auth)
 
 ---
 
