@@ -3,6 +3,8 @@ title: Detalhes do Banco de Dados
 icon: material/file-check
 ---
 
+#  Detalhes do Banco de Dados
+
 ## Escolha do PostgreSQL
 
 Optamos pelo PostgreSQL como a solução de banco de dados para o sistema de autoatendimento após uma cuidadosa avaliação de diferentes formatos de bancos de dados. A decisão foi baseada na robustez, flexibilidade e no conjunto de recursos avançados que o PostgreSQL oferece, os quais se alinham perfeitamente com as necessidades complexas e em evolução do nosso projeto. 

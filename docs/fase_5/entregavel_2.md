@@ -1,7 +1,9 @@
 ---
-title: Lei Geral de Proteção de Dados (LGPD)
+title: Entregável 2
 icon: material/file-check
 ---
+
+# Lei Geral de Proteção de Dados (LGPD)
 
 ## Solicitação de Exclusão de Dados Pessoais
 
