@@ -1,5 +1,5 @@
 ---
-title: Detalhes do Banco de Dados
+title: Entregável 1
 icon: material/file-check
 ---
 
