@@ -12,6 +12,11 @@ icon: material/file-check
   <figcaption>Arquitetura de Microserviços</figcaption>
 </figure>
 
+!!! GITHUB "Repositórios dos microserviços que compõem a arquitetura"
+    - **`pedido-produto`**: [postech-5soat-grupo-25/tech-challenge-pedido-produto](https://github.com/postech-5soat-grupo-25/tech-challenge-pedido-produto)
+    - **`usuario-cliente`**: [postech-5soat-grupo-25/tech-challenge-usuario-cliente](https://github.com/postech-5soat-grupo-25/tech-challenge-usuario-cliente)
+    - **`pagamento`**: [postech-5soat-grupo-25/tech-challenge-pagamento](https://github.com/postech-5soat-grupo-25/tech-challenge-pagamento)
+
 ---
 
 ## SAGA Coreografada
