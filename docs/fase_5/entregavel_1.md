@@ -1,7 +1,9 @@
 ---
-title: Aplicação do Padrão SAGA
+title: Entregável 1
 icon: material/file-check
 ---
+
+# Aplicação do Padrão SAGA
 
 ## Arquitetura de Microserviços
 
@@ -9,6 +11,8 @@ icon: material/file-check
   ![Arquitetura de Microserviços](../assets/images/fase_5/arquitetura_fila.png){ width="600" }
   <figcaption>Arquitetura de Microserviços</figcaption>
 </figure>
+
+---
 
 ## SAGA Coreografada
 

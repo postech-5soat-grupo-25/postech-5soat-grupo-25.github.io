@@ -1,7 +1,9 @@
 ---
-title: Infraestrutura com Terraform
+title: Entregável 2
 icon: material/file-check
 ---
+
+# Infraestrutura com Terraform
 
 ## Infraestrutura como Código
 
