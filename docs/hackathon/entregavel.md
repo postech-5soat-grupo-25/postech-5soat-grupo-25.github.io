@@ -60,3 +60,10 @@ As funcionalidades de _login_ e _envio de e-mails_ foram posicionadas próximas 
 
 !!! GITHUB "postech-5soat-grupo-25/hackathon-infra"
     [Acesse o repositório para mais detalhes!](https://github.com/postech-5soat-grupo-25/hackathon-infra)
+
+Abaixo temos um exemplo de e-mail enviado pela solução:
+
+<figure markdown>
+  ![E-mail enviado](../assets/images/hackathon/email.png){ width="600" }
+  <figcaption></figcaption>
+</figure>
