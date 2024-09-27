@@ -196,3 +196,39 @@
     -webkit-mask-image: var(--md-admonition-icon--rabbitmq);
             mask-image: var(--md-admonition-icon--rabbitmq);
   }
+
+  :root {
+    --md-admonition-icon--typescript: url('/assets/extra/admonitions/typescript.svg');
+  }
+  .md-typeset .admonition.typescript,
+  .md-typeset details.typescript {
+    border-color: rgb(49, 120, 198);
+  }
+  .md-typeset .typescript > .admonition-title,
+  .md-typeset .typescript > summary {
+    background-color: rgba(49, 120, 198, 0.1);
+  }
+  .md-typeset .typescript > .admonition-title::before,
+  .md-typeset .typescript > summary::before {
+    background-color: rgb(49, 120, 198);
+    -webkit-mask-image: var(--md-admonition-icon--typescript);
+            mask-image: var(--md-admonition-icon--typescript);
+  }
+
+  :root {
+    --md-admonition-icon--go: url('/assets/extra/admonitions/go.svg');
+  }
+  .md-typeset .admonition.go,
+  .md-typeset details.go {
+    border-color: rgb(0, 173, 216);
+  }
+  .md-typeset .go > .admonition-title,
+  .md-typeset .go > summary {
+    background-color: rgba(0, 173, 216, 0.1);
+  }
+  .md-typeset .go > .admonition-title::before,
+  .md-typeset .go > summary::before {
+    background-color: rgb(0, 173, 216);
+    -webkit-mask-image: var(--md-admonition-icon--go);
+            mask-image: var(--md-admonition-icon--go);
+  }

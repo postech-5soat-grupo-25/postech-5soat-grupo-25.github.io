@@ -1,5 +1,5 @@
 ---
-title: Entregável 1
+title: Entregável
 icon: material/file-check
 ---
 
