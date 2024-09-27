@@ -1,0 +1,1382 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../entregavel_1/">
+      
+      
+        <link rel="next" href="../entregavel_3/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
+    
+    
+      
+        <title>Entregável 2 - Tech Challenge | PosTech 5SOAT • Grupo 25</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#infraestrutura-kubernetes" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Tech Challenge | PosTech 5SOAT • Grupo 25" class="md-header__button md-logo" aria-label="Tech Challenge | PosTech 5SOAT • Grupo 25" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tech Challenge | PosTech 5SOAT • Grupo 25
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entregável 2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7m2 11.58V16h-1v-4.59l1.71-1.7c.39-.39.39-1.03 0-1.42s-1.03-.39-1.42 0L12 9.59l-1.29-1.3c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l1.71 1.7V16h-1v-2.42C8.23 12.81 7 11.05 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.05-1.23 3.81-3 4.58M9 20h6v1c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 20h6v1c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1zM19 9c0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H9c-.55 0-1-.45-1-1v-2.26C6.19 13.47 5 11.38 5 9c0-3.87 3.13-7 7-7s7 3.13 7 7m-4.29-.71c-.39-.39-1.03-.39-1.42 0L12 9.59l-1.29-1.3c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l1.71 1.7V16h2v-4.59l1.71-1.7c.39-.39.39-1.03 0-1.42"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/postech-5soat-grupo-25" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Repositórios
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase_1/entregavel_1/" class="md-tabs__link">
+          
+  
+  Fase 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../entregavel_1/" class="md-tabs__link">
+          
+  
+  Fase 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase_3/entregavel_1/" class="md-tabs__link">
+          
+  
+  Fase 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase_4/entregavel/" class="md-tabs__link">
+          
+  
+  Fase 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase_5/entregavel_1/" class="md-tabs__link">
+          
+  
+  Fase 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hackathon/entregavel/" class="md-tabs__link">
+          
+  
+  Hackathon
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tech Challenge | PosTech 5SOAT • Grupo 25" class="md-nav__button md-logo" aria-label="Tech Challenge | PosTech 5SOAT • Grupo 25" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    Tech Challenge | PosTech 5SOAT • Grupo 25
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/postech-5soat-grupo-25" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Repositórios
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fase 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_1/entregavel_1/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_1/entregavel_2/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_1/entregavel_3/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Fase 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entregavel_1/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 2
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 2
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#infraestrutura-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infraestrutura Kubernetes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infraestrutura Kubernetes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#construcao-dos-manifestos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Construção dos Manifestos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Construção dos Manifestos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#app-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      app-deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-hpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      app-hpa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      app-metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-svc" class="md-nav__link">
+    <span class="md-ellipsis">
+      app-svc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      configmap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-postgres" class="md-nav__link">
+    <span class="md-ellipsis">
+      db-postgres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-svc" class="md-nav__link">
+    <span class="md-ellipsis">
+      db-svc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-pagamentos-pod" class="md-nav__link">
+    <span class="md-ellipsis">
+      mock-pagamentos-pod
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-pagamentos-svc" class="md-nav__link">
+    <span class="md-ellipsis">
+      mock-pagamentos-svc
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entregavel_3/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fase 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_3/entregavel_1/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_3/entregavel_2/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fase 4
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 4
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_4/entregavel/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fase 5
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 5
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_5/entregavel_1/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_5/entregavel_2/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_5/entregavel_3/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hackathon
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Hackathon
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hackathon/entregavel/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#infraestrutura-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Infraestrutura Kubernetes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Infraestrutura Kubernetes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#construcao-dos-manifestos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Construção dos Manifestos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Construção dos Manifestos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#app-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      app-deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-hpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      app-hpa
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      app-metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#app-svc" class="md-nav__link">
+    <span class="md-ellipsis">
+      app-svc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      configmap
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-postgres" class="md-nav__link">
+    <span class="md-ellipsis">
+      db-postgres
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#db-svc" class="md-nav__link">
+    <span class="md-ellipsis">
+      db-svc
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-pagamentos-pod" class="md-nav__link">
+    <span class="md-ellipsis">
+      mock-pagamentos-pod
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mock-pagamentos-svc" class="md-nav__link">
+    <span class="md-ellipsis">
+      mock-pagamentos-svc
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Entregável 2</h1>
+
+<div><h2 id="infraestrutura-kubernetes">Infraestrutura Kubernetes<a class="headerlink" href="#infraestrutura-kubernetes" title="Permanent link">¶</a></h2>
+<div class="admonition kubernetes">
+<p class="admonition-title">Como estamos organizando os manifestos?</p>
+<p><strong>Kustomize</strong> é uma ferramenta de configuração de aplicações Kubernetes que permite a personalização de recursos de configuração sem a necessidade de templates. Com Kustomize, é possível gerenciar as configurações Kubernetes de forma declarativa, utilizando arquivos YAML para definir os recursos necessários para a aplicação. O Kustomize permite a sobreposição e a composição de diferentes configurações, facilitando a reutilização e a manutenção das definições de infraestrutura. O Kustomize é integrado ao <code>kubectl</code>, permitindo o uso do comando <code>kubectl apply -k</code> para aplicar as configurações definidas com Kustomize diretamente no cluster Kubernetes.</p>
+</div>
+<hr>
+<h3 id="construcao-dos-manifestos">Construção dos Manifestos<a class="headerlink" href="#construcao-dos-manifestos" title="Permanent link">¶</a></h3>
+<h4 id="app-deployment">app-deployment<a class="headerlink" href="#app-deployment" title="Permanent link">¶</a></h4>
+<p>O arquivo define o Deployment da nossa aplicação Rust. O Deployment é responsável por gerenciar a criação, a atualização e a escala dos Pods que hospedam os containers da aplicação. Ele garante que o número especificado de réplicas do Pod esteja sempre em execução, facilitando a atualização e a manutenção da aplicação sem interrupções no serviço.</p>
+<p>A configuração inclui a definição de uma única réplica do Pod, garantindo a execução de uma instância da nossa aplicação. Utilizamos a imagem Docker <code>brunomafra/grupo-25-tech-challenge:latest</code> para os containers, e a aplicação é configurada para expor a porta <code>3000</code>. As variáveis de ambiente são injetadas a partir de um ConfigMap, permitindo uma configuração externa flexível. Além disso, especificamos um pedido mínimo de <code>1m</code> de CPU para o container. Os trechos para <code>livenessProbe</code> e <code>readinessProbe</code> são preparados para monitorar a saúde do container, essenciais para garantir a disponibilidade e a confiabilidade da aplicação em produção.</p>
+<hr>
+<h4 id="app-hpa">app-hpa<a class="headerlink" href="#app-hpa" title="Permanent link">¶</a></h4>
+<p>O arquivo define um Horizontal Pod Autoscaler (HPA) para nossa aplicação Rust, essencial para garantir a escalabilidade e a eficiência de recursos na nossa infraestrutura Kubernetes. O HPA monitora automaticamente a utilização de recursos, como CPU, dos Pods gerenciados pelo Deployment especificado e ajusta o número de réplicas com base nas métricas observadas. Isso assegura que a aplicação possa lidar com variações na carga de trabalho, aumentando ou diminuindo o número de Pods conforme necessário, sem intervenção manual.</p>
+<p>A configuração do HPA está direcionada ao Deployment, com o número mínimo de réplicas definido como <code>1</code> e o máximo como <code>10</code>. Isso significa que a aplicação sempre terá pelo menos um Pod em execução, podendo escalar até dez Pods com base na demanda. O critério de escalabilidade é a utilização de CPU, com o HPA configurado para aumentar o número de réplicas quando a utilização média de CPU dos Pods exceder <code>30%</code>. Essa abordagem permite um balanceamento eficaz entre o desempenho da aplicação e o uso de recursos, adaptando-se dinamicamente às necessidades de carga de trabalho.</p>
+<hr>
+<h4 id="app-metrics">app-metrics<a class="headerlink" href="#app-metrics" title="Permanent link">¶</a></h4>
+<p>Este arquivo habilita a coleta e o fornecimento de métricas de recursos (como CPU e memória) dos Pods e nós no nosso cluster Kubernetes. A configuração estabelece o Metrics Server como um agregador de métricas, que é utilizado por recursos como o Horizontal Pod Autoscaler (HPA) para tomar decisões de escalabilidade baseadas no uso de recursos.</p>
+<p>É responsável por configurar as permissões necessárias através de <code>ServiceAccount</code>, <code>ClusterRoles</code> e <code>Bindings</code> para que o Metrics Server possa acessar e coletar métricas de recursos. Ele também define um serviço no namespace <code>kube-system</code> para expor o Metrics Server internamente no cluster, além de um Deployment que especifica a versão da imagem do Metrics Server, argumentos de inicialização para sua configuração adequada, e probes de <code>liveness</code> e <code>readiness</code> para assegurar a operação contínua e confiável do serviço. Por fim, um <code>APIService</code> é registrado, permitindo o acesso às métricas coletadas através da API do Kubernetes, facilitando a automação e o monitoramento baseados em métricas no cluster, o que é crucial para a escalabilidade e a eficiência da gestão de recursos.</p>
+<hr>
+<h4 id="app-svc">app-svc<a class="headerlink" href="#app-svc" title="Permanent link">¶</a></h4>
+<p>Este arquivo define um Service no Kubernetes para nossa aplicação Rust. O principal objetivo desse Service é fornecer um ponto de acesso estável para os Pods que executam nossa aplicação, permitindo a comunicação com a aplicação tanto internamente, dentro do cluster, quanto externamente. O Service abstrai a lógica de roteamento e permite que a aplicação seja acessada sem a necessidade de saber a localização exata dos Pods ou suas instâncias.</p>
+<p>O Service é configurado como um <code>NodePort</code>, o que significa que ele estará acessível em uma porta específica (<code>31200</code>) em todos os nós do cluster. Isso facilita o acesso à aplicação de fora do cluster Kubernetes. O Service direciona o tráfego para os Pods que correspondem ao seletor, garantindo que as requisições sejam encaminhadas para a aplicação correta. As portas são configuradas para que o tráfego TCP na porta <code>3000</code> do nó seja direcionado para a porta <code>3000</code> do container, que é a porta em que nossa aplicação Rust está ouvindo. Essa configuração destaca a importância de definir claramente os pontos de comunicação e acesso para a aplicação dentro da infraestrutura Kubernetes, promovendo a disponibilidade e a escalabilidade da aplicação.</p>
+<hr>
+<h4 id="configmap">configmap<a class="headerlink" href="#configmap" title="Permanent link">¶</a></h4>
+<p>Este arquivo define um ConfigMap chamado na nossa infraestrutura Kubernetes. O ConfigMap é utilizado para armazenar configurações em formato de chave-valor, que podem ser consumidas por Pods na aplicação. O principal objetivo desse ConfigMap é fornecer uma maneira flexível e centralizada de gerenciar configurações externas para a nossa aplicação, como informações de conexão ao banco de dados e URLs de serviços externos, sem a necessidade de <em>hardcoding</em> essas informações nos arquivos da aplicação.</p>
+<hr>
+<h4 id="db-postgres">db-postgres<a class="headerlink" href="#db-postgres" title="Permanent link">¶</a></h4>
+<p>O arquivo define um Pod no Kubernetes para hospedar o banco de dados PostgreSQL. O objetivo principal desse Pod é fornecer um serviço de banco de dados persistente e confiável para nossa aplicação, permitindo o armazenamento e a recuperação de dados de forma eficiente. Utilizando um Pod para o banco de dados, podemos aproveitar os recursos de orquestração do Kubernetes para gerenciar a disponibilidade e a escalabilidade do serviço de banco de dados.</p>
+<p>O Pod é configurado para executar um único container, utilizando a imagem <code>m</code>, que é uma versão leve do PostgreSQL. O container expõe a porta <code>5432</code>, que é a porta padrão para conexões ao PostgreSQL, facilitando a comunicação com a aplicação. As configurações do banco de dados, como nome do banco, usuário e senha, são injetadas no container através de variáveis de ambiente definidas em um ConfigMap.</p>
+<hr>
+<h4 id="db-svc">db-svc<a class="headerlink" href="#db-svc" title="Permanent link">¶</a></h4>
+<p>Esse arquivo cria um Service no Kubernetes que tem como objetivo principal fornecer um ponto de acesso estável e confiável ao banco de dados PostgreSQL. O Service facilita a comunicação entre a aplicação e o banco de dados, permitindo que os componentes da aplicação se conectem ao banco de dados usando um nome de serviço fixo, independentemente das mudanças nos Pods que realmente executam o banco de dados.</p>
+<p>O Service é configurado para expor a porta <code>5432</code>, que é a porta padrão usada pelo PostgreSQL para aceitar conexões. Ele utiliza um seletor para direcionar o tráfego para o Pod que executa o banco de dados. Essa configuração garante que qualquer componente da aplicação que precise se conectar ao banco de dados PostgreSQL possa fazê-lo através do nome do serviço, proporcionando uma maneira consistente e desacoplada de acessar o banco de dados dentro do cluster Kubernetes.</p>
+<hr>
+<h4 id="mock-pagamentos-pod">mock-pagamentos-pod<a class="headerlink" href="#mock-pagamentos-pod" title="Permanent link">¶</a></h4>
+<p>Este arquivo define um Pod cujo objetivo é simular um serviço de pagamentos para fins de desenvolvimento e teste da nossa aplicação. Ao utilizar um mock para o serviço de pagamentos, podemos validar a integração e o fluxo de pagamentos da aplicação sem a necessidade de interagir com um serviço de pagamentos real, facilitando o desenvolvimento e os testes em ambientes isolados ou de desenvolvimento.</p>
+<p>O Pod é configurado para executar um único container, que utiliza a imagem <code>brunomafra/mock-pagamentos:latest</code>. Esta imagem contém a aplicação mock de pagamentos, projetada para simular as respostas e comportamentos de um serviço de pagamentos real. O container é configurado para expor a porta <code>9000</code>, que é a porta na qual o serviço mock de pagamentos aceita requisições. Através dessa configuração, outros componentes da nossa aplicação podem se conectar ao serviço mock de pagamentos usando o nome do Pod e a porta <code>9000</code>, permitindo testar o fluxo de pagamentos sem afetar sistemas de pagamento reais ou incorrer em custos.</p>
+<hr>
+<h4 id="mock-pagamentos-svc">mock-pagamentos-svc<a class="headerlink" href="#mock-pagamentos-svc" title="Permanent link">¶</a></h4>
+<p>Este arquivo cria um Service cujo principal objetivo é fornecer um ponto de acesso estável ao Pod que simula um serviço de pagamentos. Esse Service facilita a comunicação entre a nossa aplicação e o serviço mock de pagamentos, permitindo que a aplicação interaja com o mock como se fosse um serviço de pagamentos real, mas dentro do ambiente controlado do nosso cluster Kubernetes.</p>
+<p>O Service é configurado para expor a porta <code>9000</code>, que é a porta na qual o serviço mock de pagamentos está ouvindo por requisições. Ele utiliza um seletor para direcionar o tráfego para o Pod correto que executa o mock de pagamentos. Essa configuração garante que qualquer componente da nossa aplicação que precise simular uma interação com um serviço de pagamentos possa fazê-lo de maneira consistente e confiável, utilizando o nome do serviço para se conectar ao mock.</p></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 - 2024 | FIAP 5SOAT • Grupo 25
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.path", "toc.follow", "header.autohide"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      
+    
+  </body>
+</html>

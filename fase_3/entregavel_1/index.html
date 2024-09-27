@@ -1,0 +1,1838 @@
+
+<!doctype html>
+<html lang="pt" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../fase_2/entregavel_3/">
+      
+      
+        <link rel="next" href="../entregavel_2/">
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.38">
+    
+    
+      
+        <title>Entregável 1 - Tech Challenge | PosTech 5SOAT • Grupo 25</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#detalhes-do-banco-de-dados" class="md-skip">
+          Pular para conteúdo
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
+    <a href="../.." title="Tech Challenge | PosTech 5SOAT • Grupo 25" class="md-header__button md-logo" aria-label="Tech Challenge | PosTech 5SOAT • Grupo 25" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tech Challenge | PosTech 5SOAT • Grupo 25
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Entregável 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7m2 11.58V16h-1v-4.59l1.71-1.7c.39-.39.39-1.03 0-1.42s-1.03-.39-1.42 0L12 9.59l-1.29-1.3c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l1.71 1.7V16h-1v-2.42C8.23 12.81 7 11.05 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.05-1.23 3.81-3 4.58M9 20h6v1c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="pink"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 20h6v1c0 .55-.45 1-1 1h-4c-.55 0-1-.45-1-1zM19 9c0 2.38-1.19 4.47-3 5.74V17c0 .55-.45 1-1 1H9c-.55 0-1-.45-1-1v-2.26C6.19 13.47 5 11.38 5 9c0-3.87 3.13-7 7-7s7 3.13 7 7m-4.29-.71c-.39-.39-1.03-.39-1.42 0L12 9.59l-1.29-1.3c-.39-.39-1.03-.39-1.42 0s-.39 1.03 0 1.42l1.71 1.7V16h2v-4.59l1.71-1.7c.39-.39.39-1.03 0-1.42"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Buscar" placeholder="Buscar" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Pesquisar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpar" aria-label="Limpar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando busca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/postech-5soat-grupo-25" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Repositórios
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Abas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase_1/entregavel_1/" class="md-tabs__link">
+          
+  
+  Fase 1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase_2/entregavel_1/" class="md-tabs__link">
+          
+  
+  Fase 2
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Fase 3
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase_4/entregavel/" class="md-tabs__link">
+          
+  
+  Fase 4
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../fase_5/entregavel_1/" class="md-tabs__link">
+          
+  
+  Fase 5
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../hackathon/entregavel/" class="md-tabs__link">
+          
+  
+  Hackathon
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tech Challenge | PosTech 5SOAT • Grupo 25" class="md-nav__button md-logo" aria-label="Tech Challenge | PosTech 5SOAT • Grupo 25" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    Tech Challenge | PosTech 5SOAT • Grupo 25
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/postech-5soat-grupo-25" title="Ir para repositório" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Repositórios
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fase 1
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_1/entregavel_1/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_1/entregavel_2/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_1/entregavel_3/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fase 2
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_2/entregavel_1/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_2/entregavel_2/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_2/entregavel_3/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Fase 3
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 3
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 1
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#escolha-do-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escolha do PostgreSQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Escolha do PostgreSQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entidades
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relacionamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relacionamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabelas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabelas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tabelas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      usuario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      cliente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pedido" class="md-nav__link">
+    <span class="md-ellipsis">
+      pedido
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      pagamento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aws-rds-para-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS RDS para PostgreSQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS RDS para PostgreSQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuracoes-para-o-free-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurações para o Free Tier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracoes-de-rede" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurações de Rede
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurações de Rede">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vpc-e-sub-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      VPC e Sub-redes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupos-de-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grupos de Segurança
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conectividade-segura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conectividade Segura
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../entregavel_2/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fase 4
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 4
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_4/entregavel/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fase 5
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Fase 5
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_5/entregavel_1/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 1
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_5/entregavel_2/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../fase_5/entregavel_3/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável 3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Hackathon
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Hackathon
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../hackathon/entregavel/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23.5 17-5 5-3.5-3.5 1.5-1.5 2 2 3.5-3.5zM6 2c-1.11 0-2 .89-2 2v16c0 1.11.89 2 2 2h7.81c-.53-.91-.81-1.95-.81-3 0-3.31 2.69-6 6-6 .34 0 .67.03 1 .08V8l-6-6m-1 1.5L18.5 9H13Z"/></svg>
+  
+  <span class="md-ellipsis">
+    Entregável
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#escolha-do-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      Escolha do PostgreSQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Escolha do PostgreSQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modelagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modelagem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Modelagem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entidades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entidades
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#relacionamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Relacionamentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tabelas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tabelas
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tabelas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      usuario
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      cliente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pedido" class="md-nav__link">
+    <span class="md-ellipsis">
+      pedido
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      pagamento
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aws-rds-para-postgresql" class="md-nav__link">
+    <span class="md-ellipsis">
+      AWS RDS para PostgreSQL
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="AWS RDS para PostgreSQL">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuracoes-para-o-free-tier" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurações para o Free Tier
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracoes-de-rede" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configurações de Rede
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configurações de Rede">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vpc-e-sub-redes" class="md-nav__link">
+    <span class="md-ellipsis">
+      VPC e Sub-redes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grupos-de-seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grupos de Segurança
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conectividade-segura" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conectividade Segura
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<div><h1 id="detalhes-do-banco-de-dados">Detalhes do Banco de Dados<a class="headerlink" href="#detalhes-do-banco-de-dados" title="Permanent link">¶</a></h1>
+<h2 id="escolha-do-postgresql">Escolha do PostgreSQL<a class="headerlink" href="#escolha-do-postgresql" title="Permanent link">¶</a></h2>
+<p>Optamos pelo PostgreSQL como a solução de banco de dados para o sistema de autoatendimento após uma cuidadosa avaliação de diferentes formatos de bancos de dados. A decisão foi baseada na robustez, flexibilidade e no conjunto de recursos avançados que o PostgreSQL oferece, os quais se alinham perfeitamente com as necessidades complexas e em evolução do nosso projeto. </p>
+<p>Em comparação com outras opções, o PostgreSQL se destacou por sua capacidade de lidar com dados complexos, extensibilidade, confiabilidade, suporte a concorrência, segurança avançada, recursos de pesquisa sofisticados, uma comunidade ativa e um modelo de custo eficiente. A seguir, detalhamos as razões que justificam essa escolha:</p>
+<ul>
+<li><strong>Compatibilidade com Dados Complexos</strong>: O PostgreSQL suporta uma ampla gama de tipos de dados, incluindo tipos primitivos, como numérico, string e booleano, bem como tipos de dados mais complexos, como arrays, JSON/B, e tipos definidos pelo usuário. Isso é essencial para armazenar detalhes complexos de pedidos e preferências de clientes.</li>
+<li><strong>Extensibilidade</strong>: O PostgreSQL é altamente extensível, permitindo definir funções, operadores e até tipos de dados personalizados. Isso facilita a adaptação e expansão do sistema conforme as necessidades do negócio evoluem.</li>
+<li><strong>Confiabilidade e Integridade dos Dados</strong>: Conhecido por sua alta confiabilidade, o PostgreSQL suporta transações ACID, garantindo a integridade dos dados mesmo em caso de falhas do sistema.</li>
+<li><strong>Suporte a Concorrência</strong>: Graças ao seu modelo de concorrência baseado em MVCC, o PostgreSQL pode processar muitas transações simultâneas sem bloqueios significativos, essencial para um sistema de autoatendimento que lida com múltiplos pedidos ao mesmo tempo.</li>
+<li><strong>Segurança</strong>: Oferece um robusto sistema de controle de acesso baseado em funções e suporta autenticação forte e SSL, protegendo os dados contra acessos não autorizados.</li>
+<li><strong>Recursos de Pesquisa Avançada</strong>: Com índices GIN e GiST, o PostgreSQL executa eficientemente consultas complexas, incluindo buscas em textos completos e operações geoespaciais, útil para análises avançadas e melhorias na interface de usuário.</li>
+<li><strong>Comunidade e Suporte</strong>: Possui uma comunidade ativa e um vasto ecossistema de ferramentas e extensões, facilitando o suporte e acesso a recursos para desenvolvimento e manutenção.</li>
+<li><strong>Custo</strong>: Sendo de código aberto, o PostgreSQL é gratuito, ajudando a reduzir os custos iniciais de desenvolvimento e implementação.</li>
+</ul>
+<h3 id="modelagem">Modelagem<a class="headerlink" href="#modelagem" title="Permanent link">¶</a></h3>
+<figure>
+<p><img alt="Diagrama de Entidade e Relacionamento" src="../../assets/images/fase_3/diagrama_entidade_relacionamento.png" width="600">
+  </p>
+<figcaption>Diagrama de Entidade e Relacionamento</figcaption>
+</figure>
+<h4 id="entidades">Entidades<a class="headerlink" href="#entidades" title="Permanent link">¶</a></h4>
+<p><code>usuario</code></p>
+<ul>
+<li>Chave Primária: <em>id</em></li>
+<li>Atributos: <em>nome, email, cpf, senha, tipo, status, data_criacao, data_atualizacao</em></li>
+</ul>
+<p><code>produto</code></p>
+<ul>
+<li>Chave Primária: <em>id</em></li>
+<li>Atributos: <em>nome, foto, descricao, categoria, preco, ingredientes, data_criacao, data_atualizacao</em></li>
+</ul>
+<p><code>cliente</code></p>
+<ul>
+<li>Chave Primária: <em>id</em></li>
+<li>Atributos: <em>nome, email, cpf, data_criacao, data_atualizacao</em></li>
+</ul>
+<p><code>pedido</code></p>
+<ul>
+<li>Chave Primária: <em>id</em></li>
+<li>Atributos: <em>cliente_id, lanche_id, acompanhamento_id, bebida_id, pagamento, status, data_criacao, data_atualizacao</em></li>
+<li>Relações:<ul>
+<li><em>cliente_id</em> é uma chave estrangeira que referencia <code>cliente</code>(<em>id</em>)</li>
+<li><em>lanche_id</em>, <em>acompanhamento_id</em>, <em>bebida_id</em> são chaves estrangeiras que referenciam <code>produto</code>(<em>id</em>)</li>
+</ul>
+</li>
+</ul>
+<p><code>pagamento</code></p>
+<ul>
+<li>Chave Primária: <em>id</em></li>
+<li>Atributos: <em>id_pedido, estado, valor, metodo, referencia, data_criacao</em></li>
+<li>Relações:<ul>
+<li><em>id_pedido</em> é uma chave estrangeira que referencia <code>pedido</code>(<em>id</em>)</li>
+</ul>
+</li>
+</ul>
+<h3 id="relacionamentos">Relacionamentos<a class="headerlink" href="#relacionamentos" title="Permanent link">¶</a></h3>
+<ul>
+<li><code>pedido</code> para <code>cliente</code>: Um relacionamento de muitos para um (N:1), onde cada pedido está associado a um único cliente, mas um cliente pode ter vários pedidos.</li>
+<li><code>pedido</code> para <code>produto</code>: Um relacionamento de muitos para muitos (N:N), representado através das chaves estrangeiras <em>lanche_id</em>, <em>acompanhamento_id</em>, <em>bebida_id</em> em pedido, indicando que um pedido pode incluir vários produtos e um produto pode estar em vários pedidos.</li>
+<li><code>pagamento</code> para <code>pedido</code>: Um relacionamento de um para um (1:1) ou um para muitos (1:N), dependendo de como os pagamentos são gerenciados. Cada pagamento está associado a um único pedido, mas um pedido pode ter vários pagamentos se forem permitidos pagamentos parciais.</li>
+</ul>
+<h3 id="tabelas">Tabelas<a class="headerlink" href="#tabelas" title="Permanent link">¶</a></h3>
+<h4 id="usuario"><code>usuario</code><a class="headerlink" href="#usuario" title="Permanent link">¶</a></h4>
+<p>Projetada para armazenar informações essenciais sobre os usuários que interagem com o sistema, sejam eles funcionários da cozinha, administradores ou qualquer outro tipo de usuário que necessite de acesso ao sistema administrativo. Esta tabela é fundamental para o controle de acesso e a gestão de permissões dentro do sistema.</p>
+<table>
+<thead>
+<tr>
+<th>Nome da Coluna</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><code>SERIAL</code></td>
+<td>Identificador único do usuário</td>
+</tr>
+<tr>
+<td>nome</td>
+<td><code>TEXT</code></td>
+<td>Nome do usuário</td>
+</tr>
+<tr>
+<td>email</td>
+<td><code>TEXT</code></td>
+<td>E-mail do usuário</td>
+</tr>
+<tr>
+<td>cpf</td>
+<td><code>TEXT</code></td>
+<td>CPF do usuário</td>
+</tr>
+<tr>
+<td>senha</td>
+<td><code>TEXT</code></td>
+<td>Senha do usuário</td>
+</tr>
+<tr>
+<td>tipo</td>
+<td><code>TIPO_USUARIO_ENUM</code></td>
+<td>Tipo do usuário (Admin ou Cozinha)</td>
+</tr>
+<tr>
+<td>status</td>
+<td><code>STATUS_USUARIO_ENUM</code></td>
+<td>Status do usuário (Ativo ou Inativo)</td>
+</tr>
+<tr>
+<td>data_criacao</td>
+<td><code>TIMESTAMP</code></td>
+<td>Data de criação do registro</td>
+</tr>
+<tr>
+<td>data_atualizacao</td>
+<td><code>TIMESTAMP</code></td>
+<td>Data de atualização do registro</td>
+</tr>
+</tbody>
+</table>
+<h4 id="produto"><code>produto</code><a class="headerlink" href="#produto" title="Permanent link">¶</a></h4>
+<p>Projetada para armazenar informações sobre os produtos oferecidos pela lanchonete, como lanches, bebidas, acompanhamentos e sobremesas. Esta tabela é essencial para o catálogo de produtos do sistema de autoatendimento, permitindo aos clientes visualizar detalhes como nome, descrição, preço e ingredientes de cada produto.</p>
+<table>
+<thead>
+<tr>
+<th>Nome da Coluna</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><code>SERIAL</code></td>
+<td>Identificador único do produto</td>
+</tr>
+<tr>
+<td>nome</td>
+<td><code>TEXT</code></td>
+<td>Nome do produto</td>
+</tr>
+<tr>
+<td>foto</td>
+<td><code>TEXT</code></td>
+<td>URL da foto do produto</td>
+</tr>
+<tr>
+<td>descricao</td>
+<td><code>TEXT</code></td>
+<td>Descrição do produto</td>
+</tr>
+<tr>
+<td>categoria</td>
+<td><code>CATEGORIA_ENUM</code></td>
+<td>Categoria do produto</td>
+</tr>
+<tr>
+<td>preco</td>
+<td><code>FLOAT</code></td>
+<td>Preço do produto</td>
+</tr>
+<tr>
+<td>ingredientes</td>
+<td><code>TEXT []</code></td>
+<td>Lista de ingredientes do produto</td>
+</tr>
+<tr>
+<td>data_criacao</td>
+<td><code>TIMESTAMP</code></td>
+<td>Data de criação do registro</td>
+</tr>
+<tr>
+<td>data_atualizacao</td>
+<td><code>TIMESTAMP</code></td>
+<td>Data de atualização do registro</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cliente"><code>cliente</code><a class="headerlink" href="#cliente" title="Permanent link">¶</a></h4>
+<p>Projetada para armazenar informações sobre os clientes que utilizam o sistema de autoatendimento. Armazenar os dados dos clientes permite ao sistema oferecer uma experiência personalizada e facilitar o processo de pedidos.</p>
+<table>
+<thead>
+<tr>
+<th>Nome da Coluna</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><code>SERIAL</code></td>
+<td>Identificador único do cliente</td>
+</tr>
+<tr>
+<td>nome</td>
+<td><code>TEXT</code></td>
+<td>Nome do cliente</td>
+</tr>
+<tr>
+<td>email</td>
+<td><code>TEXT</code></td>
+<td>E-mail do cliente</td>
+</tr>
+<tr>
+<td>cpf</td>
+<td><code>TEXT</code></td>
+<td>CPF do cliente</td>
+</tr>
+<tr>
+<td>data_criacao</td>
+<td><code>TIMESTAMP</code></td>
+<td>Data de criação do registro</td>
+</tr>
+<tr>
+<td>data_atualizacao</td>
+<td><code>TIMESTAMP</code></td>
+<td>Data de atualização do registro</td>
+</tr>
+</tbody>
+</table>
+<h4 id="pedido"><code>pedido</code><a class="headerlink" href="#pedido" title="Permanent link">¶</a></h4>
+<p>Essencial para o registro e acompanhamento dos pedidos realizados no sistema de autoatendimento. Vincula pedidos a clientes e detalha os itens selecionados, além de armazenar o status do pedido.</p>
+<table>
+<thead>
+<tr>
+<th>Nome da Coluna</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><code>SERIAL</code></td>
+<td>Identificador único do pedido</td>
+</tr>
+<tr>
+<td>cliente_id</td>
+<td><code>INT</code></td>
+<td>ID do cliente que fez o pedido</td>
+</tr>
+<tr>
+<td>lanche_id</td>
+<td><code>INT</code></td>
+<td>ID do lanche no pedido</td>
+</tr>
+<tr>
+<td>acompanhamento_id</td>
+<td><code>INT</code></td>
+<td>ID do acompanhamento no pedido</td>
+</tr>
+<tr>
+<td>bebida_id</td>
+<td><code>INT</code></td>
+<td>ID da bebida no pedido</td>
+</tr>
+<tr>
+<td>pagamento</td>
+<td><code>TEXT</code></td>
+<td>Informação de pagamento</td>
+</tr>
+<tr>
+<td>status</td>
+<td><code>STATUS_PEDIDO_ENUM</code></td>
+<td>Status do pedido</td>
+</tr>
+<tr>
+<td>data_criacao</td>
+<td><code>TIMESTAMP</code></td>
+<td>Data de criação do registro</td>
+</tr>
+<tr>
+<td>data_atualizacao</td>
+<td><code>TIMESTAMP</code></td>
+<td>Data de atualização do registro</td>
+</tr>
+</tbody>
+</table>
+<h4 id="pagamento"><code>pagamento</code><a class="headerlink" href="#pagamento" title="Permanent link">¶</a></h4>
+<p>Projetada para registrar detalhes das transações financeiras associadas a cada pedido, crucial para o gerenciamento financeiro do sistema de autoatendimento.</p>
+<table>
+<thead>
+<tr>
+<th>Nome da Coluna</th>
+<th>Tipo de Dado</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><code>SERIAL</code></td>
+<td>Identificador único do pagamento</td>
+</tr>
+<tr>
+<td>id_pedido</td>
+<td><code>INT</code></td>
+<td>ID do pedido associado</td>
+</tr>
+<tr>
+<td>estado</td>
+<td><code>TEXT</code></td>
+<td>Estado do pagamento</td>
+</tr>
+<tr>
+<td>valor</td>
+<td><code>FLOAT</code></td>
+<td>Valor do pagamento</td>
+</tr>
+<tr>
+<td>metodo</td>
+<td><code>TEXT</code></td>
+<td>Método de pagamento utilizado</td>
+</tr>
+<tr>
+<td>referencia</td>
+<td><code>TEXT</code></td>
+<td>Referência da transação</td>
+</tr>
+<tr>
+<td>data_criacao</td>
+<td><code>TIMESTAMP</code></td>
+<td>Data de criação do registro</td>
+</tr>
+</tbody>
+</table>
+<h2 id="aws-rds-para-postgresql">AWS RDS para PostgreSQL<a class="headerlink" href="#aws-rds-para-postgresql" title="Permanent link">¶</a></h2>
+<p>No projeto, optamos pelo Amazon Relational Database Service (RDS) para implementar nossa instância do banco de dados PostgreSQL. A escolha do AWS RDS é fundamentada em sua capacidade de fornecer uma solução de banco de dados relacional escalável, segura e de alta disponibilidade, com gerenciamento simplificado, o que nos permite focar no desenvolvimento da aplicação sem a necessidade de dedicar recursos significativos à administração do banco de dados.</p>
+<div class="admonition github">
+<p class="admonition-title">postech-5soat-grupo-25/tech_challenge-database</p>
+<p><a href="https://github.com/postech-5soat-grupo-25/tech_challenge-database">Acesse o repositório para mais detalhes!</a></p>
+</div>
+<p>O AWS RDS oferece várias vantagens que o tornam uma escolha ideal para a implementação do nosso banco de dados PostgreSQL:</p>
+<ul>
+<li><strong>Gerenciamento Simplificado</strong>: O RDS automatiza tarefas administrativas como provisionamento de hardware, configuração de banco de dados, patching de software e backups, permitindo que nossa equipe se concentre mais no desenvolvimento e menos na manutenção.</li>
+<li><strong>Escalabilidade</strong>: Com o RDS, podemos facilmente escalar a capacidade de computação ou armazenamento do nosso banco de dados conforme necessário, sem tempo de inatividade.</li>
+<li><strong>Disponibilidade e Durabilidade</strong>: O RDS facilita a configuração de réplicas de leitura e backups automáticos, garantindo alta disponibilidade e recuperação de desastres.</li>
+<li><strong>Segurança</strong>: O serviço oferece recursos robustos de segurança, incluindo o isolamento de rede com Amazon VPC, criptografia em trânsito e em repouso, e controle de acesso detalhado.</li>
+</ul>
+<h3 id="configuracoes-para-o-free-tier">Configurações para o Free Tier<a class="headerlink" href="#configuracoes-para-o-free-tier" title="Permanent link">¶</a></h3>
+<p>Para garantir a aderência ao <em>free tier</em> da AWS e otimizar os custos, configuramos nossa instância do PostgreSQL no RDS com as seguintes especificações:</p>
+<ul>
+<li><em>Tipo de Instância</em>: <code>db.t3.micro</code>, adequado para ambientes de teste ou pequenas aplicações, e elegível para o free tier da AWS.</li>
+<li><em>Armazenamento Alocado</em>: <code>10 GB</code>, dentro do limite do free tier, proporcionando espaço suficiente para o desenvolvimento inicial e testes.</li>
+<li><em>Engine Version</em>: Escolhemos a versão mais recente compatível com o free tier para garantir melhor desempenho e segurança.</li>
+</ul>
+<h3 id="configuracoes-de-rede">Configurações de Rede<a class="headerlink" href="#configuracoes-de-rede" title="Permanent link">¶</a></h3>
+<p>Para garantir uma gestão eficaz e segura da infraestrutura de rede que suporta o acesso ao nosso banco de dados PostgreSQL hospedado no AWS RDS, optamos por separar a configuração de rede em seu próprio repositório dedicado. Essa abordagem modular nos permite focar especificamente nas necessidades de segurança, escalabilidade e gerenciamento da rede, facilitando a manutenção e a aplicação de melhores práticas de segurança de forma isolada. Através deste repositório de rede, implementamos uma série de recursos e políticas para gerenciar eficientemente o tráfego de rede, permitindo o acesso seguro ao banco de dados enquanto restringimos conexões não autorizadas.</p>
+<div class="admonition github">
+<p class="admonition-title">postech-5soat-grupo-25/tech_challenge-network</p>
+<p><a href="https://github.com/postech-5soat-grupo-25/tech_challenge-network">Acesse o repositório para mais detalhes!</a></p>
+</div>
+<h4 id="vpc-e-sub-redes">VPC e Sub-redes<a class="headerlink" href="#vpc-e-sub-redes" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Amazon Virtual Private Cloud</strong> (VPC): Criamos uma VPC dedicada para isolar nossa infraestrutura de banco de dados na AWS. Isso nos permite controlar o ambiente de rede, incluindo a seleção de intervalos de IP, criação de sub-redes e configuração de tabelas de rotas.</li>
+<li><strong>Sub-redes Públicas e Privadas</strong>: Dentro da VPC, configuramos sub-redes públicas e privadas. O banco de dados é colocado em sub-redes privadas para restringir o acesso direto da internet, aumentando a segurança.</li>
+</ul>
+<h4 id="grupos-de-seguranca">Grupos de Segurança<a class="headerlink" href="#grupos-de-seguranca" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Grupos de Segurança para o RDS</strong>: Configuramos grupos de segurança específicos para o banco de dados PostgreSQL no RDS, atuando como um firewall virtual que controla o tráfego de entrada e saída. As regras de entrada são cuidadosamente definidas para permitir conexões apenas de IPs ou sub-redes específicas necessárias para a operação da aplicação, enquanto todo o tráfego não autorizado é bloqueado.</li>
+</ul>
+<h4 id="conectividade-segura">Conectividade Segura<a class="headerlink" href="#conectividade-segura" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Gateway de Internet e NAT</strong>: Para permitir que o banco de dados acesse a internet para atualizações e patches, sem expô-lo diretamente, utilizamos um Gateway de Internet para as sub-redes públicas e uma instância NAT para as sub-redes privadas. Isso garante que o banco de dados possa se comunicar com a internet de maneira segura.</li>
+<li><strong>Grupos de Sub-redes do RDS</strong>: Ao associar o banco de dados a grupos de sub-redes específicos, garantimos que ele possa operar em múltiplas zonas de disponibilidade, aumentando a disponibilidade e a resiliência.</li>
+</ul></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 - 2024 | FIAP 5SOAT • Grupo 25
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.path", "toc.follow", "header.autohide"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d6f25eb3.min.js"></script>
+      
+    
+  </body>
+</html>
